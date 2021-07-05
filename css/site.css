@@ -1,4 +1,4 @@
-/* Solarized Light theme
+/* Solarized Theme
 https://ethanschoonover.com/solarized/
 $base03:    #002b36; 
 $base02:    #073642;
@@ -17,16 +17,36 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900; */
 
+:root {
+    --background-color: #073642;
+    --color: #eee8d5;
+    --display: flex;
+    --flex-direction: row;
+    --justify-content: center;
+}
 body {
-    background-color: #eee8d5;
-    color: #073642;
+    color: var(--color);
+    background-color: var(--background-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#header {
+    display: var(--display);
+    flex-direction: var(--flex-direction);
+    justify-content: var(--justify-content);
+}
+
+#header_btn {
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7px;
+    margin: 8px;
+    padding: 4px;
 }
 
 #construction {
-    font-size: 24px;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: lighter;
+    display: var(--display);
+    flex-direction: var(--flex-direction);
+    justify-content: var(--justify-content);
 }
